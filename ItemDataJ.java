@@ -21,6 +21,17 @@ public String getType(){
    
 }
 
-
+public String getInfo(){
+   Class class1 =originalValue.getClass();
+   if(class1.equals(String.class)){
+    return "L" + ((String)originalValue).length();
+   } else if (class1.equals(Integer.class)){
+        int value = (Integer) originalValue;
+        if (value % 10 ==0){
+            return "M10" ;
+            
+        }
+   }
+}
 
 }
