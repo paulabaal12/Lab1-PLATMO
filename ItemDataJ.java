@@ -29,9 +29,22 @@ public String getInfo(){
         int value = (Integer) originalValue;
         if (value % 10 ==0){
             return "M10" ;
-            
+
+        } else if (value %5 == 0){
+            return "M2";
+        } else {
+            return null;
         }
-   }
+   } else if  (class1.equals(Boolean.class)){
+    boolean value = (Boolean) originalValue;
+    if(value){
+        return "Verdadero";
+    } else {
+        return "Falso";
+    }
+} else {
+    return null;
+}
 }
 
 }
